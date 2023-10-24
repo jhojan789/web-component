@@ -53,21 +53,9 @@ class MyElement extends HTMLElement{
   }
 
   attributeChangedCallback(name, oldValue, newValue){
-
-    switch(name){
-      case 'title':
-        this.title = newValue;
-        break;
-      case 'paragraph':
-        this.paragraph = newValue;
-        break;
-      case 'img':
-        this.img = newValue;
-        break;
-      default:
-        break;
+    if(newValue!== oldValue)
+      this[name] = newValue;
     }
-  }
 
 }
 customElements.define('my-element', MyElement);
