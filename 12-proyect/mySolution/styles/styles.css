@@ -76,4 +76,52 @@ html{
   font-size: 1.5rem;
 }
 
+@media screen and (min-width:800px){
+  
+
+  .product-card__logo {
+    height: 100vh;
+    width: 50vw;
+  }
+
+  .product-card__container {
+    width: 50vw;
+  }
+
+  .product-card__image {
+    width: 140%;
+    top: 15vh;
+    transform: rotate(-30deg);
+    left: -15vw;
+  }
+
+  .product-card__logo::before {
+    font-size: 15vw;
+    top: -8px;
+  }
+
+  .product-card__description {
+    padding-left: 4vw;
+    padding-right: 30px;
+  }
+
+  .product-card__footer {
+    justify-content: space-between;
+  }
+
+  .product-card__title span {
+    display: block;
+    margin-top: 12px;
+  }
+
+  .product-card {
+    display: flex;
+  }
+
+  .product-card__price {
+    margin-left: 32px;
+  }
+
+}
+
 
