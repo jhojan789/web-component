@@ -9,6 +9,9 @@ class ProductCard extends HTMLElement{
   static get observedAttributes(){
     return ['img','title','description','collection','price']
   }
+  formatNumber(number){
+    return new Intl.NumberFormat('en-US',{style: 'currency', currency: 'USD'}).format(number);
+  } 
 
   getTemplate(){
     const template = document.createElement('template');
@@ -22,7 +25,7 @@ class ProductCard extends HTMLElement{
             <h2 class="product-card__title">${this.title} <span>${this.collection}</span></h2>
             <p class="product-card__description">${this.description}</p>
             <div class="product-card__footer">
-              <p class="product-card__price">${this.price}</p>
+              <p class="product-card__price">${this.formatNumber(this.price)}</p>
               <button class="product-card__buy">BUY NOW</button>
 
             </div>
@@ -45,6 +48,7 @@ class ProductCard extends HTMLElement{
     :host{
       --primary-color: #515fa9;
       --button-color: #515fa9;
+    
     }
   
     .product-card__logo {
@@ -104,6 +108,7 @@ class ProductCard extends HTMLElement{
       font-size: 2.9rem;
       font-weight: bold;
       color: #a09c9c;
+      margin: 0;
     }
     
     .product-card__buy {
