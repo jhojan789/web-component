@@ -9,7 +9,13 @@ html{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.product-card__logo {
+product-card { 
+  --primary-color: green;
+  --button-color: salmon;
+}
+
+
+/* .product-card__logo {
   position: relative;
   background-color: #515fa9;
   height: 40vh;
@@ -123,5 +129,5 @@ html{
   }
 
 }
-
+ */
 

@@ -6,24 +6,17 @@
   <title>Document</title>
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
-  <main class="product-card">
-    <section class="product-card__logo">
-      <img src="./assets/images/nike-blue.png" class="product-card__image" alt="">
-    </section>
-    <section class="product-card__container">
-      <div class="product-card_content">
-        <h2 class="product-card__title">Nike Zoom 2020 <span>RUNNING COLLECTION</span></h2>
-        <p class="product-card__description">The Nike Zoom 2020 tennis shoes are a remarkable fusion of cutting-edge technology and stylish design, making them a top choice for tennis enthusiasts of all skill levels. These shoes are the epitome of innovation, engineered to enhance your performance on the court while ensuring maximum comfort. The Zoom 2020 features a sleek and dynamic design, with a low-profile silhouette that not only looks good but also aids in agility and speed during quick movements. The upper is crafted from a breathable and lightweight mesh material, providing optimal ventilation to keep your feet cool during intense rallies. This innovative construction also offers exceptional durability to withstand the rigors of the game.</p>
-        <div class="product-card__footer">
-          <p class="product-card__price">$150</p>
-          <button class="product-card__buybutton">BUY NOW</button>
+  <product-card 
+      img="./assets/images/nike-blue.png" 
+      title="Nike Zoom 2020" 
+      collection="RUNNING COLLECTION" 
+      description="The Nike Zoom 2020 tennis shoes are a remarkable fusion of cutting-edge technology and stylish design, making them a top choice for tennis enthusiasts of all skill levels. These shoes are the epitome of innovation, engineered to enhance your performance on the court while ensuring maximum comfort. The Zoom 2020 features a sleek and dynamic design, with a low-profile silhouette that not only looks good but also aids in agility and speed during quick movements. The upper is crafted from a breathable and lightweight mesh material, providing optimal ventilation to keep your feet cool during intense rallies. This innovative construction also offers exceptional durability to withstand the rigors of the game." 
+      price="$150"
+    >
+    </product-card>
 
-        </div>
-      </div>
-    </section>
-
-  </main>
   <script type="module" src="./app.js"></script>
 </body>
 </html>
